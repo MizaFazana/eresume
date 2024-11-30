@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(42deg, #ffd5cf, #fff3ce);
+            overflow-y: auto;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+       
+        .container-project {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text-dark-red {
+            color: #b00020;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 350px;
+            height: 400px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+  <a href="index.html"><img src="rumah.jpeg" alt="HOME" style="float:left;width:50px;height:50px; "></a>
+
+
+<div class="container-project">
+    <h1 class="text-dark-red">Editing Project</h1>
+    <div class="cards">
+<div class="card">
+            <a href="maga1.pdf" target="_blank">
+                <img src="maga1.png" alt="project"width="380" height="380">
+                <div class="overlay">Magazine 1</div>
+            </a>
+</div>
+ <div class="card">
+            <a href="maga2.pdf" target="_blank">
+                <img src="maga2.jpeg" alt="project">
+                <div class="overlay">Catalog</div>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="sampul.jpeg" alt="project">
+            <div class="overlay">Design Sampul Raya</div>
+        </div>
+        <div class="card">
+            <img src="sjadi.jpeg" alt="project">
+            <div class="overlay">Finish Porduct</div>
+        </div>
+        <div class="card">
+            <img src="jamuan.jpeg" alt="project">
+            <div class="overlay">Hari Raya Invitation</div>
+        </div>
+        <div class="card">
+            <img src="bcard.jpeg" alt="project">
+            <div class="overlay">Business Card</div>
+        </div>
+      
+              <div class="card">
+            <img src="banner.jpeg" alt="project">
+            <div class="overlay">Banner</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
